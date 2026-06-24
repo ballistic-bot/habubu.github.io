@@ -3,6 +3,52 @@
 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=hxZO9l6DAYwNBttvIP5h0BbJjn978T-qeN-e4dHrc6YTlb1jilUrK_M32Jo5w-hNlioApAaDyrqBnVSaEn_KYdYlgQNxng2VmqAn1E7Z1ATn4FziORJhKwDp5L7iwglG5Fq3JutHO9F2b0GqSam55HBtfThuxxawLfZxsraCZwm_LmP6KHyKwgi0OtY0rsRS419vZaZ6Ft7WoAVmd94Fh3NZwayFKMMsbsB0bp7TSbz0pLCLcVmfKTjuYHV-OhjXYwx3GJfxov5Vs3H3lus5V5gioNUHVVW4TCzxH6K0x6FIjhbiphhfLFbFL-i1XrN7aZsAvZiHI56V2fPMDqAJ9A" charset="UTF-8"></script><style>
 :root{--bg1:#fff0f6;--bg2:#ffe6f0;--card:#ffffffcc;--text:#2a1b2a;--muted:#6b465a;--accent:#ff4d88;--accent2:#ff7aa8;--shadow:0 18px 45px rgba(0,0,0,.12);--radius:24px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:radial-gradient(900px 500px at 10% 10%,#fff 0%,transparent 60%),radial-gradient(800px 520px at 90% 15%,#fff 0%,transparent 55%),linear-gradient(135deg,var(--bg1),var(--bg2));overflow-x:hidden}.shell{width:min(1180px,94vw);margin:0 auto;padding:22px 0 38px}.topbar{position:sticky;top:12px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px;border-radius:999px;background:rgba(255,255,255,.74);border:1px solid rgba(255,77,136,.20);backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(0,0,0,.08)}.brand{display:flex;align-items:center;gap:10px;padding-left:8px;font-weight:800;white-space:nowrap}.brand-heart{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;box-shadow:0 10px 20px rgba(255,77,136,.24)}.tabs{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.tab-btn{border:0;cursor:pointer;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.65);color:var(--text);font-weight:700;transition:.2s}.tab-btn:hover{transform:translateY(-1px)}.tab-btn.active{color:white;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 10px 22px rgba(255,77,136,.26)}.panel{display:none;margin-top:22px}.panel.active{display:block;animation:fade .25s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.hero{min-height:calc(100vh - 135px);display:grid;place-items:center;text-align:center;padding:24px;border-radius:var(--radius);background:var(--card);border:1px solid rgba(255,77,136,.18);box-shadow:var(--shadow);backdrop-filter:blur(10px)}.hero-inner{max-width:780px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:rgba(255,77,136,.12);border:1px solid rgba(255,77,136,.24);font-weight:700;font-size:14px;margin-bottom:16px}h1{margin:0 0 14px;font-size:clamp(34px,6vw,72px);line-height:1.02;letter-spacing:-1.6px}.hero p{margin:0 auto 24px;max-width:60ch;color:var(--muted);font-size:clamp(16px,2.2vw,20px);line-height:1.6}.cta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.cta{border:0;cursor:pointer;padding:13px 18px;border-radius:16px;font-weight:800;font-size:16px;box-shadow:0 12px 24px rgba(0,0,0,.09)}.cta.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white}.cta.secondary{background:rgba(255,255,255,.75);color:var(--text);border:1px solid rgba(0,0,0,.08)}.frame-card{height:calc(100vh - 120px);min-height:680px;border-radius:var(--radius);overflow:hidden;background:white;border:1px solid rgba(255,77,136,.18);box-shadow:var(--shadow)}iframe{width:100%;height:100%;border:0;display:block;background:white}.placeholder{min-height:calc(100vh - 135px);padding:28px;border-radius:var(--radius);background:var(--card);border:1px solid rgba(255,77,136,.18);box-shadow:var(--shadow);backdrop-filter:blur(10px)}.placeholder h2{font-size:clamp(28px,4vw,44px);margin:0 0 12px}.placeholder p{color:var(--muted);line-height:1.7;max-width:70ch}
 /* === Anniversary Feature Tabs === */
+#passwordGate{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#fff0f6,#ffe6f0);
+}
+
+.password-box{
+  width:min(360px,90vw);
+  padding:28px;
+  border-radius:24px;
+  text-align:center;
+  background:rgba(255,255,255,.85);
+  border:1px solid rgba(255,77,136,.25);
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.password-box input{
+  width:100%;
+  padding:13px 15px;
+  margin:14px 0;
+  border-radius:14px;
+  border:1px solid rgba(255,77,136,.3);
+  font-size:16px;
+  text-align:center;
+}
+
+.password-box button{
+  border:0;
+  cursor:pointer;
+  padding:12px 18px;
+  border-radius:14px;
+  font-weight:800;
+  color:white;
+  background:linear-gradient(135deg,#ff4d88,#ff7aa8);
+}
+
+#passwordError{
+  margin-top:12px;
+  color:#ff4d88;
+  font-weight:700;
+}
+
 .new-feature{
   position:relative;
   animation:newGlow 2s infinite alternate;
@@ -272,6 +318,15 @@
 </style>
 </head>
 <body>
+  <div id="passwordGate">
+    <div class="password-box">
+      <h2> Enter Password</h2>
+      <p>This page is only for my 🍪</p>
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="checkPassword()">Unlock</button>
+      <div id="passwordError"></div>
+    </div>
+  </div>
   <div class="shell">
     <nav class="topbar" aria-label="Main tabs">
       <div class="brand">
@@ -1628,4 +1683,32 @@ if (spinBtn) {
     }
   });
 }
-</script></body></html>
+const correctPassword = "kookie";
+
+function checkPassword(){
+  const input = document.getElementById("passwordInput").value;
+  const error = document.getElementById("passwordError");
+
+  if(input === correctPassword){
+    document.getElementById("passwordGate").style.display = "none";
+    sessionStorage.setItem("unlocked","true");
+  }else{
+    error.textContent = "Wrong password";
+  }
+}
+
+window.addEventListener("load", () => {
+
+  if(sessionStorage.getItem("unlocked")==="true"){
+    document.getElementById("passwordGate").style.display="none";
+  }
+
+  document.getElementById("passwordInput").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+      checkPassword();
+    }
+  });
+
+});
+</script>
+</body></html>
